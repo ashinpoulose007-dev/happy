@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Happy Birthday Papa</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- PAGE 1 -->
+<div id="page1" class="page active dark">
+  <h1>🎂 Blow the Candles 🎂</h1>
+
+  <div class="cake" onclick="goPage(2)">
+    🎂
+    <div class="candles">
+      <span class="flame"></span>
+      <span class="flame"></span>
+      <span class="flame"></span>
+    </div>
+  </div>
+
+  <p>Click the cake to blow candles</p>
+</div>
+
+<!-- PAGE 2 -->
+<div id="page2" class="page black">
+  <canvas id="fireworks"></canvas>
+
+  <h1 class="big-text">🎉 HAPPY BIRTHDAY PAPA 🎉</h1>
+
+  <button onclick="goPage(3)">Next ➡️</button>
+</div>
+
+<!-- PAGE 3 -->
+<div id="page3" class="page gradient">
+  <div class="box">
+    <h1>❤️ Love You Papa ❤️</h1>
+    <p>
+      Thank you for everything you have done for me.<br>
+      Your love, care, and sacrifices mean the world to me.<br>
+      I am lucky to have you as my father.<br><br>
+      Happy Birthday once again! 🎂
+    </p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
