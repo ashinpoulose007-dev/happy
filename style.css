@@ -21,14 +21,12 @@ body {
 
 .dark { background: #222; }
 .black { background: black; }
-.gradient { background: linear-gradient(45deg, red, black); }
 
-/* BIG CAKE */
+/* CAKE */
 .cake {
   font-size: 200px;
   cursor: pointer;
   position: relative;
-  margin-top: 20px;
 }
 
 .candles {
@@ -57,7 +55,6 @@ body {
 .big-text {
   font-size: 80px;
   animation: glow 2s infinite alternate;
-  z-index: 1;
 }
 
 @keyframes glow {
@@ -68,22 +65,58 @@ body {
 button {
   padding: 12px 25px;
   font-size: 18px;
-  margin-top: 20px;
-  border: none;
   border-radius: 10px;
+  border: none;
   background: gold;
   cursor: pointer;
-  z-index: 1;
 }
 
-.box {
-  max-width: 600px;
-  font-size: 24px;
-}
-
+/* FIREWORK */
 canvas {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 0;
+}
+
+/* COLLAGE PAGE */
+.collage-page {
+  position: relative;
+  overflow: hidden;
+}
+
+/* IMAGE GRID */
+.collage {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.collage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* COLLAGE STYLE */
+.collage img:nth-child(1) { grid-column: span 2; }
+.collage img:nth-child(3) { grid-row: span 2; }
+.collage img:nth-child(5) { grid-column: span 2; }
+
+/* MESSAGE */
+.message-overlay {
+  position: relative;
+  z-index: 2;
+  background: rgba(0,0,0,0.5);
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.message-overlay h1 {
+  font-size: 40px;
+}
+
+.message-overlay p {
+  font-size: 22px;
 }
